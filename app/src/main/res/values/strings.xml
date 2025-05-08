@@ -1,0 +1,132 @@
+<resources>
+    <string name="app_name">SmartFarmApp</string>
+    <string name="title_monitoring">Мониторинг</string>
+    <string name="title_control">Управление</string>
+    <string name="title_cycles">Циклы</string>
+
+
+    <string name="label_temperature">Температура</string>
+    <string name="label_humidity">Влажность</string>
+    <string name="label_light_status">Освещение</string>
+    <string name="button_refresh">Обновить</string>
+
+
+    <string name="temperature_format_c">%.1f °C</string> <!-- Новый формат для Цельсия -->
+    <string name="temperature_format_f">%.1f °F</string> <!-- Новый формат для Фаренгейта -->
+    <string name="humidity_format">%.1f %%</string>
+    <string name="light_on">Включено</string>
+    <string name="light_off">Выключено</string>
+    <string name="status_update_time_format">Обновлено: %s</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="label_light_control">Управление светом</string>
+    <string name="label_watering_control">Управление поливом</string>
+    <string name="button_start_watering">Запустить полив</string>
+
+    <!-- Строки для AddPlantActivity -->
+    <string name="add_plant_title">Новый цикл выращивания</string>
+    <string name="hint_plant_name">Название растения</string>
+    <string name="hint_grow_duration_days">Ожидаемая длительность (дни)</string>
+    <string name="hint_notes_optional">Заметки (необязательно)</string>
+    <string name="button_save_cycle">Сохранить цикл</string>
+
+    <!-- Сообщения об ошибках валидации -->
+    <string name="error_plant_name_empty">Название растения не может быть пустым</string>
+    <string name="error_duration_invalid">Укажите положительное число дней</string>
+    <string name="error_check_fields">Пожалуйста, проверьте введенные данные</string>
+
+    <!-- Сообщение об успехе -->
+    <string name="cycle_saved_success">Новый цикл сохранен (имитация)</string>
+    <string name="add_new_cycle">Добавить новый цикл</string>
+
+    <!-- Строки для Настроек -->
+    <string name="title_activity_settings">Настройки</string> <!-- Заголовок для SettingsActivity -->
+
+    <string name="pref_category_units">Единицы измерения</string>
+    <string name="pref_category_general">Общие</string>
+
+    <!-- Единицы температуры -->
+    <string name="pref_key_temperature_unit">temperature_unit</string> <!-- Ключ для SharedPreferences -->
+    <string name="pref_title_temperature_unit">Единица температуры</string>
+    <string name="pref_summary_temperature_unit">Выберите градусы Цельсия или Фаренгейта</string>
+
+    <!-- Язык -->
+    <string name="pref_key_language">language</string>
+    <string name="pref_title_language">Язык приложения</string>
+    <string name="pref_summary_language">Выберите язык интерфейса</string>
+    <!-- Примечание: Реальная смена языка требует доп. кода в Application/Activity -->
+
+    <!-- Уведомления -->
+    <string name="pref_key_notifications">notifications_enabled</string>
+    <string name="pref_title_notifications">Включить уведомления</string>
+    <string name="pref_summary_notifications_on">Уведомления включены</string>
+    <string name="pref_summary_notifications_off">Уведомления выключены</string>
+
+    <!-- Действие для меню настроек -->
+    <string name="action_settings">Настройки</string>
+
+    <string name="action_help">Помощь</string>
+
+    <!-- Строки для HelpActivity -->
+    <string name="title_activity_help">Помощь и Справка</string>
+    <string name="help_title_main">Добро пожаловать в SmartFarm!</string>
+    <string name="help_content_main">Это приложение поможет вам управлять вашей умной мини-фермой для выращивания микрозелени.\n\nОсновные разделы:\n\n•\t<b>Мониторинг:</b> Отображает текущие показатели температуры, влажности и освещения вашей фермы.\n\n•\t<b>Управление:</b> Позволяет вручную включать/выключать свет и запускать систему полива.\n\n•\t<b>Циклы:</b> Показывает список всех ваших циклов выращивания. Нажмите \"+\", чтобы добавить новый цикл.\n\n•\t<b>Настройки:</b> Здесь вы можете настроить единицы измерения и другие параметры приложения.</string>
+
+    <string name="help_title_faq">Часто задаваемые вопросы (FAQ)</string>
+    <string name="help_content_faq"><b>В: Как добавить новый цикл?</b>\nО: Перейдите на вкладку \"Циклы\" и нажмите на плавающую кнопку со знаком \"+\" в правом нижнем углу.\n\n<b>В: Почему данные мониторинга не обновляются?</b>\nО: Убедитесь, что ваша ферма подключена к сети и приложение имеет доступ к интернету. Попробуйте нажать кнопку \"Обновить\" на экране Мониторинга.\n\n<b>В: Как изменить единицы температуры?</b>\nО: Перейдите в \"Настройки\" (через меню в правом верхнем углу) и выберите нужные единицы в разделе \"Единицы измерения\".</string>
+
+    <string name="loading_cycle_details">Загрузка деталей цикла...</string>
+    <string name="tab_title_info">Инфо</string>
+    <string name="tab_title_log">Журнал</string>
+    <string name="tab_title_notes">Заметки</string>
+    <string name="hint_notes">Ваши заметки по этому циклу...</string>
+    <string name="button_save_notes">Сохранить заметки</string>
+
+    <string name="label_status">Статус</string>
+    <string name="label_start_date">Дата начала</string>
+    <string name="label_expected_duration">Ожидаемая длительность</string>
+    <string name="label_end_date">Дата окончания</string>
+    <string name="duration_days_format">%d дней</string>
+
+    <string name="log_coming_soon">Журнал событий скоро появится</string>
+    <string name="faq_q_add_cycle">В: Как добавить новый цикл?</string>
+    <string name="faq_a_add_cycle">О: Перейдите на вкладку \"Циклы\" и нажмите на плавающую кнопку со знаком \"+\" в правом нижнем углу.</string>
+    <string name="help_tab_content">Общее</string>
+    <string name="help_tab_faq">FAQ</string>
+
+    <string name="faq_q_monitoring">В: Почему данные мониторинга не обновляются?</string>
+    <string name="faq_a_monitoring">О: Убедитесь, что ваша ферма подключена к сети и приложение имеет доступ к интернету. Попробуйте нажать кнопку \"Обновить\" на экране Мониторинга.</string>
+    <string name="faq_q_units">В: Как изменить единицы температуры?</string>
+    <string name="faq_a_units">О: Перейдите в \"Настройки\" (через меню в правом верхнем углу) и выберите нужные единицы в разделе \"Единицы измерения\".</string>
+    <string name="pref_summary_go_to_units">Настроить единицы измерения</string>
+
+    <string name="pref_key_theme">app_theme</string>
+    <string name="pref_title_theme">Тема приложения</string>
+    <string name="cd_edit_status">Редактировать статус</string>
+    <string name="status_planned">Планируется</string>
+    <string name="status_active">Активен</string>
+    <string name="status_completed">Завершен</string>
+    <string name="status_cancelled">Отменен</string>
+    <string name="dialog_title_select_status">Выберите новый статус</string>
+    <string name="dialog_button_ok">ОК</string>
+    <string name="dialog_button_cancel">Отмена</string>
+
+    <string name="button_save_changes">Сохранить изменения</string>
+
+    <string name="error_pump_control">Ошибка управления насосом</string>
+    <string name="label_pump_control">Управление насосом</string>
+    <string name="label_pump_status">Насос</string>
+    <string name="pump_on">Включен</string>
+    <string name="pump_off">Выключен</string>
+    <string name="app_logo_description">Логотип приложения</string>
+
+    <string name="hint_germination_days">Срок прорастания (дни, необяз.)</string>
+    <string name="helper_optional">(необязательно)</string>
+    <string name="label_germination_days">Срок прорастания</string>
+    <string name="label_days_remaining">Осталось дней</string>
+
+    <string name="cd_cycle_image">Фото цикла</string>
+    <string name="button_select_image">Выбрать фото</string>
+    <string name="cd_remove_image">Удалить фото</string>
+    <string name="button_change_image">Изменить фото</string>
+</resources>

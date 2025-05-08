@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".fragments.ControlFragment">
+
+    <!-- Управление светом -->
+    <TextView
+        android:id="@+id/lightControlLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_light_control"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/lightSwitchProgress"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/lightSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/lightControlLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"
+        tools:checked="true"/>
+
+    <ProgressBar
+        android:id="@+id/lightSwitchProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/lightControlLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/lightSwitch"/>
+
+    <!-- Управление поливом -->
+    <TextView
+        android:id="@+id/pumpControlLabel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/label_pump_control"
+        android:textAppearance="@style/TextAppearance.Material3.TitleLarge"
+        android:layout_marginTop="32dp"
+        app:layout_constraintTop_toBottomOf="@id/lightSwitch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/pumpProgress"/>
+
+    <com.google.android.material.materialswitch.MaterialSwitch
+        android:id="@+id/pumpSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/pumpControlLabel"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="8dp"/>
+
+    <ProgressBar
+        android:id="@+id/pumpProgress"
+        style="?android:attr/progressBarStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone"
+        tools:visibility="visible"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/pumpControlLabel"
+        app:layout_constraintBottom_toBottomOf="@+id/pumpSwitch"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

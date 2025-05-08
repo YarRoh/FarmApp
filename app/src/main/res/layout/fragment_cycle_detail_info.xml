@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    tools:context=".fragments.cycledetail.CycleDetailInfoFragment">
+
+    <!-- Название Растения -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/plantNameInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_plant_name"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/plantNameEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textCapWords"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Ожидаемая Длительность -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/durationInputLayout"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:hint="@string/hint_grow_duration_days"
+        app:layout_constraintTop_toBottomOf="@id/plantNameInputLayout"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:errorEnabled="true">
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/durationEditText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Срок прорастания -->
+    <TextView
+        android:id="@+id/germinationDaysLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="@string/label_germination_days"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/durationInputLayout"
+        tools:visibility="visible"/>
+    <TextView
+        android:id="@+id/germinationDaysText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/germinationDaysLabel"
+        tools:text="5 дней"
+        tools:visibility="visible"/>
+
+    <!-- Статус -->
+    <TextView
+        android:id="@+id/statusLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_status"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/germinationDaysText"/>
+    <TextView
+        android:id="@+id/statusText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:textAppearance="@style/TextAppearance.Material3.TitleMedium"
+        app:layout_constraintStart_toEndOf="@id/statusLabel"
+        app:layout_constraintEnd_toStartOf="@+id/editStatusButton"
+        app:layout_constraintBaseline_toBaselineOf="@id/statusLabel"
+        app:layout_constrainedWidth="true"
+        tools:text="Активен" />
+    <ImageButton
+        android:id="@+id/editStatusButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:src="@drawable/ic_edit"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_edit_status"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/statusLabel"
+        app:layout_constraintBottom_toBottomOf="@id/statusLabel"/>
+
+    <!-- Дата начала -->
+    <TextView
+        android:id="@+id/startDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_start_date"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/statusLabel"/>
+    <TextView
+        android:id="@+id/startDateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startDateLabel"
+        tools:text="27 апр 2024, 14:22" />
+
+    <!-- Оставшиеся дни -->
+    <TextView
+        android:id="@+id/daysRemainingLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="@string/label_days_remaining"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/startDateText"
+        tools:visibility="visible"/>
+    <TextView
+        android:id="@+id/daysRemainingText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/daysRemainingLabel"
+        tools:text="8 дней"
+        tools:visibility="visible"/>
+
+    <!-- Дата окончания -->
+    <TextView
+        android:id="@+id/endDateLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:visibility="gone"
+        android:text="@string/label_end_date"
+        android:textAppearance="@style/TextAppearance.Material3.LabelMedium"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/daysRemainingText"
+        tools:visibility="visible"/>
+
+    <TextView
+        android:id="@+id/endDateText"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:visibility="gone"
+        android:textAppearance="@style/TextAppearance.Material3.BodyLarge"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/endDateLabel"
+        tools:text="11 мая 2024, 14:22"
+        tools:visibility="visible"/>
+
+    <ImageView
+        android:id="@+id/cycleImageView"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="24dp"
+        android:scaleType="centerCrop"
+        android:visibility="gone"
+        android:contentDescription="@string/cd_cycle_image"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/endDateText"
+        tools:srcCompat="@tools:sample/backgrounds/scenic"
+        tools:visibility="visible"/>
+
+    <Button
+        android:id="@+id/selectImageButton"
+        style="?attr/materialButtonOutlinedStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:text="@string/button_select_image"
+        app:icon="@drawable/ic_add_photo"
+        app:layout_constraintStart_toEndOf="@id/cycleImageView"
+        app:layout_constraintTop_toTopOf="@id/cycleImageView" /> <!-- Выравниваем по верху ImageView -->
+
+    <ImageButton
+        android:id="@+id/removeImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:minWidth="48dp"
+        android:minHeight="48dp"
+        android:layout_marginStart="8dp"
+        android:visibility="gone"
+        android:src="@drawable/ic_delete"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="@string/cd_remove_image"
+        app:layout_constraintStart_toEndOf="@id/selectImageButton"
+        app:layout_constraintTop_toTopOf="@id/selectImageButton"
+        app:layout_constraintBottom_toBottomOf="@id/selectImageButton"
+        tools:visibility="visible"/>
+
+
+
+    <!-- Кнопка сохранения -->
+    <Button
+        android:id="@+id/saveInfoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="@string/button_save_changes"
+        app:layout_constraintTop_toBottomOf="@id/cycleImageView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintVertical_bias="1.0"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

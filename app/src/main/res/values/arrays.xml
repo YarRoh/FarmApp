@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Для единиц температуры -->
+    <string-array name="temperature_unit_entries">
+        <item>Градусы Цельсия (°C)</item>
+        <item>Градусы Фаренгейта (°F)</item>
+    </string-array>
+    <string-array name="temperature_unit_values">
+        <item>celsius</item>
+        <item>fahrenheit</item>
+    </string-array>
+
+    <!-- Для языка -->
+    <string-array name="language_entries">
+        <item>Системный</item>
+        <item>Русский</item>
+        <item>English</item>
+    </string-array>
+    <string-array name="language_values">
+        <item>system</item>
+        <item>ru</item>
+        <item>en</item>
+    </string-array>
+
+    <!-- Для выбора темы -->
+    <string-array name="theme_entries">
+        <item>Светлая</item>
+        <item>Темная</item>
+        <item>Как в системе</item>
+    </string-array>
+    <string-array name="theme_values">
+        <item>light</item> <!-- Значение для светлой -->
+        <item>dark</item>  <!-- Значение для темной -->
+        <item>system</item> <!-- Значение для системной -->
+    </string-array>
+
+    <string-array name="grow_cycle_statuses">
+        <item>Планируется</item>
+        <item>Активен</item>
+        <item>Завершен</item>
+        <item>Отменен</item>
+    </string-array>
+</resources>

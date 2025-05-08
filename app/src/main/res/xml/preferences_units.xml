@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Настройки единиц измерения -->
+    <ListPreference
+        android:key="@string/pref_key_temperature_unit"
+        android:title="@string/pref_title_temperature_unit"
+        android:summary="@string/pref_summary_temperature_unit"
+        android:entries="@array/temperature_unit_entries"
+        android:entryValues="@array/temperature_unit_values"
+        android:defaultValue="celsius" />
+
+    <!-- Добавьте сюда другие настройки единиц, если они появятся -->
+    <!-- Например:
+    <ListPreference
+        android:key="pref_key_humidity_unit"
+        android:title="Единица влажности" ... />
+    -->
+
+</PreferenceScreen>

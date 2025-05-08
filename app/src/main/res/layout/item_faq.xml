@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="8dp">
+
+    <TextView
+        android:id="@+id/questionTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Material3.TitleSmall"
+        android:textStyle="bold"
+        tools:text="В: Как добавить новый цикл?"/> <!-- Закрыт правильно: /> -->
+
+    <TextView
+        android:id="@+id/answerTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        tools:text="О: Перейдите на вкладку Циклы и нажмите на плавающую кнопку со знаком + в правом нижнем углу."/> <!-- Убедитесь, что эта строка заканчивается на /> -->
+
+</LinearLayout>

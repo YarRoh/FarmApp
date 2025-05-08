@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingVertical="6dp">
+
+    <TextView
+        android:id="@+id/logTimestampText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Material3.LabelSmall"
+        tools:text="28 апр 2024, 11:15:30"/>
+
+    <TextView
+        android:id="@+id/logMessageText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="@style/TextAppearance.Material3.BodyMedium"
+        tools:text="Статус изменен с 'Планируется' на 'Активен'"/>
+
+</LinearLayout>

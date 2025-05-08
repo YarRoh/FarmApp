@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Material 3 Colors (Light Theme) -->
+    <color name="md_theme_light_primary">#386A1F</color>
+    <color name="md_theme_light_onPrimary">#FFFFFF</color>
+    <color name="md_theme_light_primaryContainer">#B9F397</color>
+    <color name="md_theme_light_onPrimaryContainer">#052100</color>
+    <color name="md_theme_light_secondary">#85540F</color>
+    <color name="md_theme_light_onSecondary">#FFFFFF</color>
+    <color name="md_theme_light_secondaryContainer">#FFDDB7</color>
+    <color name="md_theme_light_onSecondaryContainer">#2D1600</color>
+    <color name="md_theme_light_tertiary">#006874</color>
+    <color name="md_theme_light_onTertiary">#FFFFFF</color>
+    <color name="md_theme_light_tertiaryContainer">#97F0FF</color>
+    <color name="md_theme_light_onTertiaryContainer">#001F24</color>
+    <color name="md_theme_light_error">#BA1A1A</color>
+    <color name="md_theme_light_errorContainer">#FFDAD6</color>
+    <color name="md_theme_light_onError">#FFFFFF</color>
+    <color name="md_theme_light_onErrorContainer">#410002</color>
+    <color name="md_theme_light_background">#FCFDF6</color>
+    <color name="md_theme_light_onBackground">#1A1C18</color>
+    <color name="md_theme_light_surface">#FCFDF6</color>
+    <color name="md_theme_light_onSurface">#1A1C18</color>
+    <color name="md_theme_light_surfaceVariant">#E0E4D6</color>
+    <color name="md_theme_light_onSurfaceVariant">#43483E</color>
+    <color name="md_theme_light_outline">#74796D</color>
+    <color name="md_theme_light_inverseOnSurface">#F1F1EB</color>
+    <color name="md_theme_light_inverseSurface">#2F312D</color>
+    <color name="md_theme_light_inversePrimary">#9EF0A0</color>
+    <color name="md_theme_light_shadow">#000000</color>
+    <color name="md_theme_light_surfaceTint">#386A1F</color>
+    <color name="md_theme_light_outlineVariant">#C3C8BB</color>
+    <color name="md_theme_light_scrim">#000000</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="status_bar_color">?attr/colorPrimaryVariant</color>
+
+    <!-- Material 3 Colors (Dark Theme) -->
+    <!-- Primary (основной акцентный, обычно светлее в темной теме) -->
+    <color name="md_theme_dark_primary">#9EF0A0</color> <!-- Светло-зеленый -->
+    <color name="md_theme_dark_onPrimary">#052100</color> <!-- Очень темный зеленый для текста на primary -->
+    <color name="md_theme_dark_primaryContainer">#1F510A</color> <!-- Темно-зеленый контейнер -->
+    <color name="md_theme_dark_onPrimaryContainer">#B9F397</color> <!-- Светло-зеленый текст на контейнере -->
+
+    <!-- Secondary (вторичный акцентный) -->
+    <color name="md_theme_dark_secondary">#FFB95A</color> <!-- Светло-коричневый/оранжевый -->
+    <color name="md_theme_dark_onSecondary">#4A2800</color> <!-- Темно-коричневый для текста на secondary -->
+    <color name="md_theme_dark_secondaryContainer">#693C00</color> <!-- Коричневый контейнер -->
+    <color name="md_theme_dark_onSecondaryContainer">#FFDDB7</color> <!-- Светло-коричневый/бежевый текст на контейнере -->
+
+    <!-- Tertiary (третичный акцентный) -->
+    <color name="md_theme_dark_tertiary">#7CD7E9</color> <!-- Голубой -->
+    <color name="md_theme_dark_onTertiary">#00363D</color> <!-- Темный сине-зеленый для текста -->
+    <color name="md_theme_dark_tertiaryContainer">#004E59</color> <!-- Темный сине-зеленый контейнер -->
+    <color name="md_theme_dark_onTertiaryContainer">#97F0FF</color> <!-- Светло-голубой текст на контейнере -->
+
+    <!-- Error -->
+    <color name="md_theme_dark_error">#FFB4AB</color>
+    <color name="md_theme_dark_errorContainer">#93000A</color>
+    <color name="md_theme_dark_onError">#690005</color>
+    <color name="md_theme_dark_onErrorContainer">#FFDAD6</color>
+
+    <!-- Backgrounds and Surfaces (Темные) -->
+    <color name="md_theme_dark_background">#1A1C18</color> <!-- Темно-серый/зеленоватый фон -->
+    <color name="md_theme_dark_onBackground">#E2E3DB</color> <!-- Светлый текст на фоне -->
+    <color name="md_theme_dark_surface">#1A1C18</color> <!-- Поверхность = фон -->
+    <color name="md_theme_dark_onSurface">#E2E3DB</color> <!-- Светлый текст на поверхности -->
+    <color name="md_theme_dark_surfaceVariant">#43483E</color> <!-- Более темный серо-зеленый -->
+    <color name="md_theme_dark_onSurfaceVariant">#C3C8BB</color> <!-- Серовато-белый текст -->
+
+    <!-- Другие -->
+    <color name="md_theme_dark_outline">#8D9386</color> <!-- Контур -->
+    <color name="md_theme_dark_inverseOnSurface">#1A1C18</color> <!-- Текст для инвертированной поверхности -->
+    <color name="md_theme_dark_inverseSurface">#E2E3DB</color> <!-- Инвертированная поверхность (светлая) -->
+    <color name="md_theme_dark_inversePrimary">#386A1F</color> <!-- Инвертированный primary (темный) -->
+    <color name="md_theme_dark_shadow">#000000</color>
+    <color name="md_theme_dark_surfaceTint">#9EF0A0</color> <!-- Оттенок поверхности (светло-зеленый) -->
+    <color name="md_theme_dark_outlineVariant">#43483E</color>
+    <color name="md_theme_dark_scrim">#000000</color>
+</resources>
